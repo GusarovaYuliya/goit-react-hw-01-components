@@ -1,11 +1,11 @@
-.item {
+ .item {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 0.5rem;
-    margin-top: 8px;
+    margin-top: 3px;
 }
 
 .status {
@@ -18,9 +18,9 @@
 .online {
     composes: status;
     background-color: green;
-}
+} 
 
-.offline {
+ .offline {
     composes: status;
     background-color: red;
 }
@@ -29,12 +29,23 @@
     margin: 0 auto;
 }
 
-.name {
+ .name {
     display: flex;
     flex-direction: column;
     align-items: left;
     padding: 0;
     text-align: left;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
+} 
+
+.friendList {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    row-gap: 10px;
+    padding-left: 0;
+    width: 342px;
+    margin-left: auto;
+    margin-right: auto;
 }
