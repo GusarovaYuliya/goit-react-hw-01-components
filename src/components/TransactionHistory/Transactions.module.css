@@ -1,29 +1,50 @@
-table,
+ table,
 th,
 td {
-    border: 1px solid black;
+    border: 1px solid rgb(155, 219, 231);
 }
 
-table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 342px;
+.transactionHistory {
+  margin: 5vh auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0.5rem;
 }
 
-th,
-td {
-    text-align: center;
-    padding: 8px;
+.headersRow {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.columnHeader {
+  width: 30%;
+  padding: 1rem 5rem;
+  background-color: #02bbd7;
+  color: #edf5f5;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-tr {
-    background-color: rgb(218, 224, 231);
+.columnHeader:first-child {
+  border-radius: 0.5rem 0 0 0;
+}
+.columnHeader:last-child {
+  border-radius: 0 0.5rem 0 0;
+}
+ .valuesRow:last-child .transactionData:first-child {
+  border-radius: 0 0 0 0.5rem;
+}
+.valuesRow:last-child .transactionData:last-child {
+  border-radius: 0 0 0.5rem 0;
 }
 
-tr:nth-child(even) {
-    background-color: rgb(171, 183, 196, .5);
+.valuesRow {
+  width: 50%;
+  color: #8a8b8e;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: capitalize;
 }
 
-.headTable {
-    background-color: #2afafa;
+.valuesRow:nth-child(even) {
+  background-color: #12bbce;
 }

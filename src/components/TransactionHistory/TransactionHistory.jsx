@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 const TransactionHistory = ({ dataTransactions }) => {
   return (
     <table className={css.transactionHistory}>
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+      <thead className={css.hederRow}>
+        <tr className={css.valuesRow}>
+          <th className={css.columnHeader}>Type</th>
+          <th className={css.columnHeader}>Amount</th>
+          <th className={css.columnHeader}>Currency</th>
         </tr>
       </thead>
 
